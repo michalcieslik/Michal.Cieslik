@@ -1,0 +1,13 @@
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.exe
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.deps.json
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.runtimeconfig.json
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.runtimeconfig.dev.json
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.dll
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\bin\Debug\netcoreapp3.1\Source.pdb
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.csproj.AssemblyReference.cache
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.AssemblyInfoInputs.cache
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.AssemblyInfo.cs
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.csproj.CoreCompileInputs.cache
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.dll
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.pdb
+E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\obj\Debug\netcoreapp3.1\Source.genruntimeconfig.cache
