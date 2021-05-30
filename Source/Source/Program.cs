@@ -29,14 +29,21 @@ namespace swi
         static void Main(string[] args)
         {
             //getting path to file
-            string path = Environment.CurrentDirectory;
-            path = path + @"\input.csv";
+            //string path = Environment.CurrentDirectory;
+            //path = path + @"\input.csv";
             //open file
-            string[] lines = System.IO.File.ReadAllLines(path);
+            string[] lines = System.IO.File.ReadAllLines(@"E:\VisualStudipProjekty\Michał.Cieślik\Source\Source\input.csv");
 
             //some global 
             int amountOfDays = 0;
             int timeSpentWorking = 0;
+
+            //if file is empty or have 1 line
+            if (lines.Length == 0 || lines.Length == 1)
+            {
+                Console.WriteLine("Niepoprawny plik");
+                return;
+            }
 
             //initialization of main array
             string[][] data = new string[lines.Length - 1][];
@@ -48,17 +55,25 @@ namespace swi
             //make array with grouped data first is day second time third entry or exit and last is gate number
             for (int i = 1; i < lines.Length; i++)
             {
-                string[] splitLine = lines[i].Split(";");
-                string[] dayAndTime = splitLine[0].Split();
-                string[] time = dayAndTime[1].Split(":");
-                //instead of time in structure we have which secend of the day it is
-                string timeInSecends = Convert.ToString((Convert.ToInt32(time[0]) * 3600) + (Convert.ToInt32(time[1]) * 60) + Convert.ToInt32(time[2]));
-                string[] entryOrExit = splitLine[1].Split(" ");
-                string[] whichDoor = splitLine[2].Split("/");
-                data[i - 1][0] = dayAndTime[0];
-                data[i - 1][1] = timeInSecends;
-                data[i - 1][2] = entryOrExit[1];
-                data[i - 1][3] = whichDoor[1];
+                try
+                {
+                    string[] splitLine = lines[i].Split(";");
+                    string[] dayAndTime = splitLine[0].Split();
+                    string[] time = dayAndTime[1].Split(":");
+                    //instead of time in structure we have which secend of the day it is
+                    string timeInSecends = Convert.ToString((Convert.ToInt32(time[0]) * 3600) + (Convert.ToInt32(time[1]) * 60) + Convert.ToInt32(time[2]));
+                    string[] entryOrExit = splitLine[1].Split(" ");
+                    string[] whichDoor = splitLine[2].Split("/");
+                    data[i - 1][0] = dayAndTime[0];
+                    data[i - 1][1] = timeInSecends;
+                    data[i - 1][2] = entryOrExit[1];
+                    data[i - 1][3] = whichDoor[1];
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Nieprawidlowy plik wejsciowy");
+                    return;
+                }
             }
 
             string currentDay = data[0][0];
